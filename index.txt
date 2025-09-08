@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="images/fav-icon.png">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Section Starts -->
+    <section id="main">
+        <!-- header starts -->
+        <header>
+            <nav class="navigation">
+                <input type="checkbox" id="menu-btn" class="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </label>
+                <div class="side-menu">
+                    <div class="menu-container">
+                        <strong>Main links</strong>
+                        <!-- close-btn ---->
+                        <label for="menu-btn" class="close-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="1em" width="1em">
+                                <path
+                                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                            </svg>
+                        </label>
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Popular</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Recent</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- logo -->
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <div class="nav-btns">
+                    <!-- search icon -->
+                    <a href="javascript:void(0);" class="nav-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                    </a>
+                    <!-- user icon -->
+                    <a href="javascript:void(0);" class="nav-user">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                        </svg>
+                    </a>
+
+                    <!-- user cart -->
+                    <a href="javascript:void(0);" class="nav-cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" height="1em" width="1em">
+                            <path
+                                d="M423.3 440.7c0 25.3-20.3 45.6-45.6 45.6s-45.8-20.3-45.8-45.6 20.6-45.8 45.8-45.8c25.4 0 45.6 20.5 45.6 45.8zm-253.9-45.8c-25.3 0-45.6 20.6-45.6 45.8s20.3 45.6 45.6 45.6 45.8-20.3 45.8-45.6-20.5-45.8-45.8-45.8zm291.7-270C158.9 124.9 81.9 112.1 0 25.7c34.4 51.7 53.3 148.9 373.1 144.2 333.3-5 130 86.1 70.8 188.9 186.7-166.7 319.4-233.9 17.2-233.9z" />
+                        </svg>
+                        <span>0</span>
+                    </a>
+
+                </div>
+            </nav>
+        </header>
+        <!-- header ends -->
+
+        <!-- main content starts -->
+        <div class="main-content">
+            <!-- text -->
+            <div class="main-content-text">
+                <strong>Coffee</strong>
+                <h1>Enjoy <br> Your Morning <br> Coffee</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi non quasi dolorum quae.</p>
+                <span>$14.50</span> <br>
+                <a href="#">Add To Cart</a>
+            </div>
+            <div class="main-content-image">
+                <img src="images/model.png" alt="mode-1">
+            </div>
+        </div>
+        <!-- main content ends -->
+    </section>
+    <!-- Main Section Ends -->
+
+    <!-- SEARCH STARTS -->
+    <div class="search-bar">
+        <!-- input -->
+        <form class="search-input">
+            <input type="text" name="search" placeholder="Search For Product!">
+            <!-- Cancel Btn -->
+            <a href="javascript:void(0);" class="search-cencle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="1em" width="1em">
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </a>
+        </form>
+    </div>
+    <!-- SEARCH ENDS -->
+
+    <!-- Login-Signup-form-starts -->
+    <div class="form">
+        <!-- ------Login------ -->
+        <div class="login-form">
+            <!-- cancle button -->
+            <a href="javascript:void(0);" class="form-cancle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="1em" width="1em">
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </a>
+            <!-- heading -->
+            <strong>LOGIN</strong>
+            <!-- inputs -->
+            <form>
+                <input type="email" name="email" placeholder="Example123@gmail.com" required>
+                <input type="password" name="password" placeholder="password" required>
+                <input type="submit" value="Log In">
+            </form>
+            <!--------- btns------ -->
+            <div class="form-btns">
+                <a href="#" class="forget">Forget Your Password</a>
+                <a href="javascript:void(0);" class="Sign-up-btn">Create An Account?</a>
+            </div>
+        </div>
+        <!-- ------Signup------ -->
+        <div class="sign-up-form">
+            <!-- cancle button -->
+            <a href="javascript:void(0);" class="form-cancle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="1em" width="1em">
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </a>
+            <!-- heading -->
+            <strong>Sign Up</strong>
+            <!-- inputs -->
+            <form>
+                <input type="text" name="fullname" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Example123@gmail.com" required>
+                <input type="password" name="password" placeholder="password" required>
+                <input type="submit" value="Sign Up">
+            </form>
+            <!--------- btns------ -->
+            <div class="form-btns">
+                <!-- <a href="#" class="forget">Forget Your Password</a> -->
+                <a href="javascript:void(0);" class="Already-account">Already Have An Acconut?</a>
+            </div>
+        </div>
+    </div>
+    <!-- Login-Signup-form-ends -->
+
+    <!-- Popular-Section-Starts -->
+    <section id="popular">
+        <!-- heading -->
+        <h2>Popular Coffee</h2>
+        <!-- -------Container--------- -->
+        <div class="popular-container">
+            <!-- ----------product-container-------------- -->
+            <div class="popular-product-container">
+            <!-- box 1-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/p1.png" alt="image-p1">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <!-- box 2-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/p2.png" alt="image-p2">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <!-- box 3-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/p3.png" alt="image-p3">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <!-- box 4-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/p4.png" alt="image-p4">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <!-- box 5-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/p5.png" alt="image-p5">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <!-- box 6-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/p6.png" alt="image-p6">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+            <!-- ----------banner------- -->
+            <div class="popular-banner">
+                <!-- text -->
+                 <div class="popular-banner-text">
+                    <h3>Coffee Beans Collection</h3>
+                    <a href="#">Shop Now</a>
+                 </div>
+                 <!-- Image -->
+                  <div class="popular-banner-img">
+                    <img src="images/banner.png" alt="banner">
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular-Section-Ends -->
+
+    <!----------- banner-starts --------->
+    <scetion id="shopping-banner">
+        <div class="shopping-banner-container">
+            <!-- text -->
+            <div class="shopping-banner-text">
+                <strong>Collection</strong>
+                <h3>Beautiful Coffee Beans</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quos amet quo. Deleniti
+                    reprehenderit dignissimos sed libero facere nam. Consequatur dolores maxime cum quod asperiores hic
+                    magnam esse facilis pariatur.</p>
+                <a href="#">Shop Now</a>
+            </div>
+            <!-- image -->
+            <div class="shopping-banner-img">
+                <img src="images/banner-img.png" alt="banner-image">
+            </div>
+        </div>
+    </scetion>
+    <!----------- banner-Ends --------->
+
+    <!--------- Recent Product Starts ------->
+    <section id="recent-products">
+        <h2>Recent Coffee Collection</h2>
+        <!------ container ----->
+        <div class="recent-product-container">
+            <!-- box 1-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/p7.png" alt="image-p1">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <!-- box 2-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/p8.png" alt="image-p1">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <!-- box 3-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/p9.png" alt="image-p1">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <!-- box 4-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/p10.png" alt="image-p1">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--------- Recent Product Ends --------->
+
+    <!--------- partner-logo-starts------- -->
+    <section id="partner">
+        <img src="images/logo-1.png" alt="Logo">
+        <img src="images/logo-2.png" alt="Logo">
+        <img src="images/logo-3.png" alt="Logo">
+        <img src="images/logo-4.png" alt="Logo">
+    </section>
+    <!--------- partner-logo-Ends------- -->
+
+    <!------ recent-products-starts ------>
+    <section id="recent-products">
+        <h2>Coffee Collection</h2>
+        <!------ container ----->
+        <div class="recent-product-container">
+            <!-- box 1-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/pl1.webp" alt="image-p1">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <!-- box 2-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/pl2.webp" alt="image-p1">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <!-- box 3-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/pl3.webp" alt="image-p1">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <!-- box 4-->
+            <div class="product-box">
+                <!-- image -->
+                <div class="product-box-img">
+                    <span>New</span>
+                    <img src="images/pl4.webp" alt="image-p1">
+                </div>
+                <!-- text -->
+                <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="#" class="product-cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!------ recent-products-Ends ------>
+
+    <!-------- download-app-sec-starts ------->
+    <section id="download-app">
+        <!-- image -->
+        <div class="app-img">
+            <img src="images/mobile-app.jpg" alt="mobile-app-ppicture">
+        </div>
+        <!-- text -->
+         <div class="main-text-and-btns">
+        <div class="download-app-text">
+            <strong>Download App</strong>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsam minima autem voluptate
+                blanditiis! At blanditiis totam nostrum sunt officia. Labore vel ipsum culpa blanditiis ducimus!
+                Possimus iusto quas sit?</p>
+        </div>
+        <!-- btns -->
+        <div class="download-btns">
+            <a href="#">
+                <img src="images/appstore-btn.png" alt="appstore-btn">
+            </a>
+            <a href="#">
+                <img src="images/googleplay-btn.png" alt="googleplay-btn">
+            </a>
+        </div>
+    </div>
+    </section>
+    <!-------- download-app-sec-Ends ------->
+
+    <!------ blog-section-starts ------>
+    <section id="blog">
+        <div class="blog-heading">
+            <h3>Recent News</h3>
+        </div>
+        <!-- container-starts -->
+        <div class="blog-container">
+            <!-- box 1-->
+            <div class="blog-box">
+                <!-- images -->
+                <div class="blog-img">
+                    <img src="images/blog-1.jpeg" alt="blog-1">
+                </div>
+                <!-- text -->
+                <div class="blog-text">
+                    <span>10 july 2021 / coffee</span>
+                    <a href="#" class="blog-title">WE provide best coffeee ever</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatibus expedita quasi
+                        assumenda nisi maiores fugit quod distinctio, quidem est nesciunt nemo dignissimos corporis
+                        itaque vel dolorum quam, sunt inventore.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <!-- box 2-->
+            <div class="blog-box">
+                <!-- images -->
+                <div class="blog-img">
+                    <img src="images/blog-2.jpg" alt="blog-1">
+                </div>
+                <!-- text -->
+                <div class="blog-text">
+                    <span>10 july 2021 / coffee</span>
+                    <a href="#" class="blog-title">WE provide best coffeee ever</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatibus expedita quasi
+                        assumenda nisi maiores fugit quod distinctio, quidem est nesciunt nemo dignissimos corporis
+                        itaque vel dolorum quam, sunt inventore.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <!-- box 3-->
+            <div class="blog-box">
+                <!-- images -->
+                <div class="blog-img">
+                    <img src="images/blog-3.jpg" alt="blog-1">
+                </div>
+                <!-- text -->
+                <div class="blog-text">
+                    <span>10 july 2021 / coffee</span>
+                    <a href="#" class="blog-title">WE provide best coffeee ever</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatibus expedita quasi
+                        assumenda nisi maiores fugit quod distinctio, quidem est nesciunt nemo dignissimos corporis
+                        itaque vel dolorum quam, sunt inventore.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- container-Ends -->
+
+    </section>
+    <!------ blog-section-Ends ------>
+
+    <!------ Services-section-starts -------->
+    <section id="services">
+        <!-- box-1 -->
+        <div class="service-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" height="1em" width="1em">
+                <path
+                    d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z" />
+            </svg>
+            <span>Free Shipping</span>
+            <p>free shipping for all orders</p>
+        </div>
+        <!-- box-2 -->
+        <div class="service-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+                <path
+                    d="M256 80C149.9 80 62.4 159.4 49.6 262c9.4-3.8 19.6-6 30.4-6c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48c-44.2 0-80-35.8-80-80V384 336 288C0 146.6 114.6 32 256 32s256 114.6 256 256v48 48 16c0 44.2-35.8 80-80 80c-26.5 0-48-21.5-48-48V304c0-26.5 21.5-48 48-48c10.8 0 21 2.1 30.4 6C449.6 159.4 362.1 80 256 80z" />
+            </svg>
+            <span>Support 24/7</span>
+            <p>support 24h a day</p>
+        </div>
+        <!-- box-3 -->
+        <div class="service-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+                <path
+                    d="M142.9 142.9c-17.5 17.5-30.1 38-37.8 59.8c-5.9 16.7-24.2 25.4-40.8 19.5s-25.4-24.2-19.5-40.8C55.6 150.7 73.2 122 97.6 97.6c87.2-87.2 228.3-87.5 315.8-1L455 55c6.9-6.9 17.2-8.9 26.2-5.2s14.8 12.5 14.8 22.2l0 128c0 13.3-10.7 24-24 24l-8.4 0c0 0 0 0 0 0L344 224c-9.7 0-18.5-5.8-22.2-14.8s-1.7-19.3 5.2-26.2l41.1-41.1c-62.6-61.5-163.1-61.2-225.3 1zM16 312c0-13.3 10.7-24 24-24l7.6 0 .7 0L168 288c9.7 0 18.5 5.8 22.2 14.8s1.7 19.3-5.2 26.2l-41.1 41.1c62.6 61.5 163.1 61.2 225.3-1c17.5-17.5 30.1-38 37.8-59.8c5.9-16.7 24.2-25.4 40.8-19.5s25.4 24.2 19.5 40.8c-10.8 30.6-28.4 59.3-52.9 83.8c-87.2 87.2-228.3 87.5-315.8 1L57 457c-6.9 6.9-17.2 8.9-26.2 5.2S16 449.7 16 440l0-119.6 0-.7 0-7.6z" />
+            </svg>
+            <span>100% Money Back</span>
+            <p>you have 30 days to return</p>
+        </div>
+
+    </section>
+    <!------ Services-section-Ends -------->
+
+    <!-------- Footer-section-starts ---------->
+    <footer>
+        <div class="footer-container">
+            <!------- company-box -->
+            <div class="footer-company-box">
+                <!-- logo -->
+                <a href="#" class="footer-logo">
+                    <img src="images/logo.png" alt="footer-logo">
+                </a>
+                <!-- details -->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut non nobis, </p>
+                <!-- social-box -->
+                <div class="footer-social">
+                    <!-- facebook -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" viewBox="0 0 320 512">
+                            <path
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                        </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+                    <!-- Twitter -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <path
+                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                        </svg>
+                    </a>
+                    <!-- youtube -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="1em" width="1em">
+                            <path
+                                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+            <!--------- Links -------->
+            <div class="footer-link-box">
+                <strong>Main Links</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Recent</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Collection</a></li>
+                </ul>
+            </div>
+            <!--------- Links -------->
+            <div class="footer-link-box">
+                <strong>Social Links</strong>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
+            <!-------- subscribe ----->
+            <div class="footer-subscribe">
+                <strong>Subscribe Now</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <form class="subscibe-box">
+                    <input type="email" name="subscribe_email" placeholder="Examle123@gmail.com" required>
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <!-- bottom -->
+         <div class="footer-bottom">
+            <span>Made By Muhammad Mustafa Hussain</span>
+            <s>© Copyright 2024 - Muhammad Mustafa Hussain</s>
+         </div>
+    </footer>
+    <!-------- Footer-section-Ends ---------->
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: 0.9;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --main-color: #9c8461;
+    --main-light: #c2a899;
+    --main-dark: #6c443b;
+    --product-bg-color: #f8f8f8;
+}
+
+#main {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+header.header-fix {
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 101;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.05);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+header.header-fix .navigation {
+    padding: 15px 0px;
+}
+
+.menu-icon svg {
+    fill: var(--main-color);
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.logo {
+    max-width: 180px;
+    height: 65px;
+    display: flex;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+    max-height: 65px;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 25px;
+}
+
+.nav-btns a svg {
+    fill: #3f3f3f;
+    width: 20px;
+    height: 18px;
+}
+
+.nav-cart {
+    position: relative;
+}
+
+.nav-cart span {
+    position: absolute;
+    left: 8px;
+    bottom: 10px;
+    color: #ffffff;
+    background-color: var(--main-color);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding-bottom: 2px;
+}
+
+.side-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.06);
+    z-index: 110;
+    transition: all ease 0.6s;
+}
+
+.side-menu::before {
+    content: '';
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    display: none;
+}
+
+#menu-btn:checked~.side-menu {
+    left: 0%;
+}
+
+#menu-btn:checked~.side-menu::before {
+    display: block;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.menu-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #ffffff;
+}
+
+.side-menu strong {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 10px;
+    padding: 5px 20px;
+    color: #ffffff;
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #f5f5f5;
+    font-weight: 800;
+}
+
+.menu {
+    display: block;
+    width: 100%;
+}
+
+.menu li a {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    color: #383838;
+    margin: 0px;
+    font-weight: 500;
+    border-bottom: 1px solid #f3f3f3;
+    transition: all ease 0.3s;
+}
+
+menu li a:hover {
+    color: #181818;
+}
+
+/* Main grid layout */
+.main-content {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 7rem;
+    align-items: center;
+}
+
+.main-content-image {
+    max-width: 100%;
+    max-height: 70vh;
+}
+
+.main-content-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.main-content-text {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content-text strong {
+    color: var(--main-dark);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 600;
+}
+
+.main-content-text h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.7rem;
+    color: #313131;
+}
+
+.main-content-text p {
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+    margin: 30px 0px;
+    color: #8a8a8a;
+    max-width: 300px;
+}
+
+.main-content-text a {
+    color: #ffffff;
+    background-color: var(--main-color);
+    height: 50px;
+    display: flex;
+    max-width: 150px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: all ease 0.3s;
+}
+
+.main-content-text a:hover {
+    opacity: 0.8;
+    /* border-radius: 10px; */
+    /* background-color: var(--main-color); */
+    color: var(--product-bg-color);
+}
+
+.main-content-text span {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #252525;
+}
+
+.search-bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40vh;
+    background-color: #ffffffbb;
+    display: none;
+    backdrop-filter: blur(30px);
+    justify-content: center;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.06);
+    /* Correct the 'o' to 0 */
+    z-index: 101;
+}
+
+.search-input {
+    width: 90%;
+    height: 100px;
+    border-bottom: 1px solid #d4d4d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 0px;
+    font-size: 1.8rem;
+    background-color: transparent;
+    padding-left: 15px;
+}
+
+.search-cencle {
+
+    fill: var(--main-dark);
+    font-size: 2rem;
+    transition: all ease 0.3s;
+}
+
+.search-cencle:hover {
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.search-bar-active {
+    display: block;
+    animation: searchanimation 0.4s;
+}
+
+@keyframes searchanimations {
+    0% {
+        bottom: -100%;
+    }
+
+    100% {
+        bottom: 0%;
+    }
+}
+
+/* Login Signup form */
+.form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    z-index: 999;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form.active {
+    display: block;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+.sign-up-form {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    display: none;
+}
+
+.form-cancle {
+    position: absolute;
+    right: 20px;
+    top: 2px;
+    fill: #868686;
+}
+
+.login-form strong,
+.sign-up-form strong {
+    color: #272727;
+    font-size: 2rem;
+    margin: 2px 7px 7px 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.login-form form,
+.sign-up-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form input,
+.sign-up-form input {
+    width: 90%;
+    height: 45px;
+    margin: 6px 0px;
+    padding: 0px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    border-radius: 7px;
+}
+
+.login-form input::placeholder,
+.sign-up-form input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.login-form input[type="submit"],
+.sign-up-form input[type="submit"] {
+    background-color: var(--main-color);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover,
+.sign-up-form input[type="submit"]:hover {
+    background-color: var(--main-dark);
+    color: #ffffff;
+}
+
+.form-btns {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.form-btns a {
+    color: #d4d4d4;
+    font-size: 0.9rem;
+
+}
+
+.form-btns a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.forms,
+.login-form,
+.sign-up-form {
+    display: none;
+}
+
+.login-active,
+.sign-up-active {
+    display: flex;
+}
+
+.login-active .login-form,
+.sign-up-active .sign-up-form {
+    display: flex;
+    animation: fade 0.4s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Popular-section */
+#popular {
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+    margin-top: 10px;
+}
+
+#popular h2,
+#recent-products h2 {
+    color: #333333;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.popular-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-gap: 50px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+.popular-product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.product-box-img {
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    position: relative;
+    background-color: var(--product-bg-color);
+    padding: 20px;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+}
+
+.product-box-img :hover {
+    opacity: 0.8;
+}
+
+.product-box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.product-box-img span {
+    position: absolute;
+    top: 5PX;
+    right: 5px;
+    justify-content: flex-end;
+    color: #ffffff;
+    background-color: var(--main-dark);
+    letter-spacing: 2px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.product-box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product-box-text .product-text-title {
+    color: #2b2b2b;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.product-box-text span {
+    color: var(--main-dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 5px;
+    letter-spacing: 1px;
+}
+
+.product-box-text span del {
+    color: #696969;
+}
+
+.product-box-text .product-cart-btn {
+    border-top: 1px solid #e9e9e9;
+    width: 100%;
+    padding: 10px;
+    color: #1d1d1d;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.3s;
+}
+
+.product-box-text .product-cart-btn svg {
+    margin-right: 5px;
+}
+
+.product-box-text .product-cart-btn:hover {
+    background-color: var(--main-dark);
+    fill: #ffffff;
+    color: #ffffff;
+    border: top 1px solid transparent;
+}
+
+.popular-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    text-align: center;
+    padding: 40px 30px;
+    background-color: var(--product-bg-color);
+    min-height: 500px;
+    width: 100%;
+}
+
+.popular-banner:hover {
+    opacity: 0.8;
+}
+
+.popular-banner-img {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.popular-banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.popular-banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.popular-banner-text h3 {
+    color: #1d1d1d;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.popular-banner-text a {
+    color: var(--main-dark);
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* shopping-banner */
+.shopping-banner {
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.shopping-banner-container {
+    background-color: var(--product-bg-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1100px;
+    padding: 50px;
+    margin: auto;
+}
+
+.shopping-banner-img {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.shopping-banner-img img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.shopping-banner-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.shopping-banner-text strong {
+    letter-spacing: 10px;
+    color: var(--main-dark);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.shopping-banner-text h3 {
+    color: #202020;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+}
+
+.shopping-banner-text p {
+    line-height: 25px;
+    color: #686868;
+    margin: 10px 0;
+}
+
+.shopping-banner-text a {
+    color: #ffffff;
+    margin-top: 10px;
+    background-color: var(--main-dark);
+    max-width: 160px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+}
+
+.shopping-banner-text a:hover {
+    opacity: 0.8;
+}
+
+/* Recent Products */
+#recent-products {
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.recent-product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 20px;
+}
+
+/* partner */
+#partner {
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    grid-gap: 15px;
+}
+
+#partner img {
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(1);
+    opacity: 0.3;
+    transition: all ease 0.3s;
+}
+
+#partner img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+
+/* download-app */
+#download-app {
+    max-width: 1150px;
+    width: 100%;
+    background-color: var(--product-bg-color);
+    height: 400px;
+    margin: 150px auto;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-text-and-btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.download-btns {
+    display: flex;
+    margin-top: 20px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.download-btns a {
+    height: 44px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.download-btns a img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.download-app-text {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.download-app-text strong {
+    color: #393939;
+    font-size: 1.56rem;
+    letter-spacing: 2px;
+}
+
+.download-app-text p {
+    color: #3b3b3b;
+    margin: 20px 0px;
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+}
+
+.app-img {
+    max-width: 400px;
+    width: 275px;
+    height: 550px;
+    background-color: #ffffff;
+    border: 4px solid #393939;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.app-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top-center;
+}
+
+
+/* Blog-section */
+#blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.blog-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.blog-heading h3 {
+    font-size: 1.8rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+.blog-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 20px 0px;
+}
+
+.blog-box {
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--product-bg-color);
+}
+
+.blog-box:hover {
+    opacity: 0.8;
+}
+
+.blog-img {
+    width: 100%;
+    height: 100%;
+    max-height: 280px;
+}
+
+.blog-img img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-text {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.blog-text span {
+    color: var(--main-color);
+    font-size: 0.9rem;
+}
+
+.blog-text .blog-title {
+    font-size: 1.3rem;
+    color: #272727;
+    font-weight: 500;
+}
+
+.blog-text p {
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+
+.blog-text a {
+    margin-bottom: 25px;
+    color: var(--main-color);
+    transition: all ease 0.3s;
+}
+
+.blog-text a:hover {
+    color: var(--main-dark);
+}
+
+/* services-section */
+#services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    grid-gap: 10px;
+}
+
+.service-box {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.055);
+    min-height: 250px;
+    padding-bottom: 10px;
+    flex-grow: 0.7;
+
+}
+
+.service-box svg {
+    fill: var(--main-dark);
+    font-size: 2rem;
+    margin: 15px;
+}
+
+.service-box span {
+    color: #222222;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.service-box p {
+    color: #878787;
+    margin: 0px;
+    font-size: 0.9rem;
+}
+
+/* footer-section */
+footer {
+    width: 100%;
+    background-color: var(--product-bg-color);
+}
+
+.footer-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-company-box,
+.footer-subscribe {
+    max-width: 330px;
+}
+
+.footer-company-box .footer-logo {
+    color: #333333;
+    max-width: 150px;
+    display: flex;
+}
+
+.footer-company-box .footer-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.footer-company-box p,
+.footer-subscribe p {
+    line-height: 20px;
+    color: #585858;
+    margin: 5px 0px;
+}
+
+.footer-social {
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+}
+
+.footer-social a {
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #333333;
+    border: 1px solid #e9e9e9;
+    font-size: 0.9rem;
+}
+
+.footer-social a:hover {
+    fill: #ffffff;
+    background-color: var(--main-dark);
+    border: 1px solid transparent;
+}
+
+.footer-link-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link-box strong,
+.footer-subscribe strong {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3b3b3b;
+}
+
+.footer-link-box ul {
+    margin-top: 5px;
+}
+
+.footer-link-box ul li a {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #585858;
+    transition: all ease 0.5s;
+}
+
+.footer-link-box ul li a:hover {
+    color: var(--main-dark);
+}
+
+.subscibe-box {
+    max-width: 320px;
+    width: 100%;
+    border: 1px solid #dadada;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.subscibe-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0px 15px;
+}
+
+.subscibe-box button {
+    color: #ffffff;
+    border: none;
+    outline: none;
+    background-color: var(--main-dark);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 40px;
+    padding: 0px 20px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.subscibe-box button:hover {
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    padding: 20px 0px;
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+    border-top: 1px solid #eee;
+}
+
+.footer-bottom span {
+    color: #252525;
+    font-size: 0.9rem;
+}
+
+/* making responsive */
+@media (min-width: 1200px) and (max-width:1500px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .main-content {
+        width: 90%;
+        height: 800px;
+        margin-top: 100px;
+    }
+
+    .main-content-image {
+        margin-bottom: 450px;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+
+    #download-app {
+        width: 90%;
+    }
+}
+
+@media (max-width:1100px) {
+    .popular-container {
+        grid-template-columns: 1fr;
+    }
+
+    .popular-banner-img {
+        max-height: 500px;
+    }
+}
+
+@media (max-width:1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .main-content-text strong {
+        font-size: 1.5rem;
+    }
+
+    .main-content-text h1 {
+        font-size: 2rem;
+    }
+
+    .main-content-text p {
+        font-size: 15px;
+    }
+
+    .recent-product-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    #download-app {
+        flex-direction: column;
+        height: 100%;
+        background-color: transparent;
+        margin: 30px auto;
+        max-width: 100%;
+    }
+
+    .app-img {
+        height: 450px;
+        width: 220px;
+    }
+
+    .download-app-text {
+        max-width: 100%;
+        background-color: var(--product-bg-color);
+        padding: 20px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-content-image {
+        max-height: 60vh;
+    }
+
+    .main-content-text {
+        margin-top: 30px;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-text p {
+        max-width: 400px;
+        margin: 40px;
+    }
+
+    .main-content-text h1 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .main-content-text a {
+        padding: 0px 20px;
+    }
+
+}
+
+@media (max-width:850px) {
+    body {
+        overflow-x: hidden;
+    }
+    .popular-banner{
+        margin-left: 10px;
+        border: 1px solid black;
+    }
+    .popular-banner img{
+        height: 500px;
+        /* border:  1px solid black; */
+    }
+    .blog-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #partner {
+        margin-top: 20px;
+        justify-content: center;
+        grid-gap: 30px;
+    }
+
+    #partner img {
+        height: 40px;
+    }
+
+    #shopping-banner {
+        padding: 20px;
+    }
+
+    .shopping-banner-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .shopping-banner-img {
+        height: auto;
+        width: 90%;
+    }
+
+    .shopping-banner-img img {
+        width: 100%;
+    }
+
+    .shopping-banner-text {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .navigation {
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .logo img {
+        max-height: 30px;
+    }
+
+    header.header-fix .navigation {
+        padding: 10px 20px;
+    }
+
+    .download-btns {
+        align-items: center;
+        margin-left: 120px;
+    }
+
+    .download-app-text {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:724px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .recent-product-container,
+    .popular-product-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+
+    .login-form,
+    .sign-up-form {
+        width: 90%;
+    }
+
+    .search-input {
+        height: 60px;
+    }
+
+    .search-input input,
+    .search-cencle {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:550px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-box {
+        width: 100%;
+    }
+
+    .download-btns {
+        margin: auto;
+    }
+}
+
+@media (max-width:320px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .recent-product-container,
+    .popular-product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .download-btns {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .download-btns a {
+        margin: 4px 0;
+        width: 140px;
+    }
+
+    .download-btns a img {
+        width: 100%;
+    }
+
+    .download-app-text strong {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 769px)and (max-width:1024px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 0px;
+    }
+
+    .popular-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .popular-product-container {
+        width: 550px;
+        height: 550px;
+    }
+
+    .popular-banner {
+        height: 550px;
+        width: 350px;
+    }
+    #download-app{
+        /* border: 1px solid black; */
+    }
+    .download-btns{
+        /* border: 1px solid black; */
+        width: 350px;
+        margin: auto;
+    }
+}
